@@ -1,0 +1,62 @@
+****************************************
+Q3.1
+
+Linear Regression - 
+	Training Accuracy: 86%
+	Testing Accuracy: 82% 
+
+SVM -
+	Training Accuracy: 98%
+	Testing Accuracy: 96%
+
+MLP - 
+	Training Accuracy: 100%
+	Testing Accuracy: 81%
+
+Random Forest - 
+	Training Accuracy: 100% 
+	Testing Accuracy: 95% 
+
+****************************************
+Q3.2 - Hyperparameter tuning
+
+Random Forest - 
+	n_estimators values tested (at least 3): 10, 20, 50
+
+	max_depth values tested (at least 3): 2, 10, 20
+		
+	Best combination of parameter values:
+		n_estimators: 50
+		max_depth: 20
+
+	Testing Accuracy before tuning (default parameters): 95%
+	Testing Accuracy after tuning: 96%
+
+
+SVM -
+	Kernels values tested: rbf, linear
+	C values tested (at least 3): 0.1, 1, 10
+		
+	Best combination of parameter values: 
+		Kernel: rbf
+		C: 10
+
+	Testing Accuracy before tuning (default parameters): 96% 
+	Testing Accuracy after tuning: 97% 
+
+****************************************
+Q3.3
+
+For your SVM's CV run from Q3.2, state the highest mean testing accuracy 
+across the sets of parameter values and its corresponding mean train score and mean fit time. 
+
+SVM's highest mean testing/cross-validated accuracy (best score): 97%
+SVM's mean train score: 100%
+SVM's mean fit time: 0.14
+
+****************************************
+Q3.4
+
+Best Classifier: Random forest
+Why: Gives a good accuracy even before tuning and also its fits faster. SVC gives slightly better accuracy but takes a long time to fit. So if accuracy is important then I would use SVC but in general cases I will use Random forest.
+
